@@ -1,0 +1,59 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "property_type": ["sale", "rent"],
+      "name": "625 S. Berendo St",
+      "image_url": "https://res.cloudinary.com/daktari/image/upload/v1583219813/propertyhub/img_1_x9mfqb.jpg",
+      "address": "625 S. Berendo St Unit 607 Los Angeles, CA 90005",
+      "price": "$2,265,500",
+      "baths": 2,
+      "beds": 3,
+      "sq_ft": 7000
+    },
+    {
+      "id": 2,
+      "property_type": ["sale", "rent"],
+      "name": "871 Crenshaw Blvd",
+      "image_url": "https://res.cloudinary.com/daktari/image/upload/v1583219817/propertyhub/img_2_oxqwq6.jpg",
+      "address": "1 New York Ave, Warners Bay, NSW 2282",
+      "price": "$3,500,000",
+      "baths": 4,
+      "beds": 4,
+      "sq_ft": 9620
+    },
+    {
+      "id": 3,
+      "property_type": ["lease"],
+      "name": "853 S Lucerne Blvd",
+      "image_url": "https://res.cloudinary.com/daktari/image/upload/v1583219817/propertyhub/img_3_ejeou5.jpg",
+      "address": "853 S Lucerne Blvd Unit 101 Los Angeles, CA 90005",
+      "price": "$2,030,00",
+      "baths": 1,
+      "beds": 2,
+      "sq_ft": 5250
+    },
+    {
+      "id": 4,
+      "property_type": ["sale"],
+      "name": "721 Woodley St",
+      "image_url": "https://res.cloudinary.com/daktari/image/upload/v1583219817/propertyhub/img_4_dm6asd.jpg",
+      "address": "721 Woodley St New York, NY",
+      "price": "$5,219,990",
+      "baths": 5,
+      "beds": 6,
+      "sq_ft": 26000
+    },
+    {
+      "id": 5,
+      "property_type": ["rent"],
+      "name": "647 Winston Ave",
+      "image_url": "https://res.cloudinary.com/daktari/image/upload/v1583219816/propertyhub/img_5_wcevfu.jpg",
+      "address": "647 Winston Ave Tampa, FL",
+      "price": "$3,209,999",
+      "baths": 3,
+      "beds": 3,
+      "sq_ft": 6500
+    }
+  ]
+}  
