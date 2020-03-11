@@ -1,12 +1,18 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import Property from '../Property'
 import { getPropertiesAction } from './action';
-
+import Paginator from 'react-hooks-paginator';
 
 function Properties() {
   const {properties} = useSelector(state => state);
+
+  const pageLimit = 6;
+ 
+  const [offset, setOffset] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [currentProperties, setCurrentProperties] = useState([]);
 
   const dispatch = useDispatch();
   const stableDispatch = useCallback(dispatch, []);
@@ -14,13 +20,16 @@ function Properties() {
   useEffect(() => {
     stableDispatch(getPropertiesAction());
   }, [stableDispatch]);
+  
+  useEffect(() => {
+    setCurrentProperties(properties.payload.slice(offset, offset + pageLimit));
+  }, [offset, properties]);
 
   console.log({properties})
   return (
     <div>
        <div className="row mb-5">
-         {/* properties.map then render single property */}
-         {properties && properties.payload.map(property => (
+         {properties && currentProperties.map(property => (
            <Property
             key={property.id}
             address={property.address}
@@ -33,19 +42,18 @@ function Properties() {
             property_type={property.property_type}
            />
          ))}
-           
         </div>
+
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="site-pagination">
-              <a href="#" className="active">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">5</a>
-              <span>...</span>
-              <a href="#">10</a>
-            </div>
+            <Paginator
+              totalRecords={properties.payload.length}
+              pageLimit={pageLimit}
+              pageNeighbours={1}
+              setOffset={setOffset}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
           </div>  
         </div>
     </div>
