@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-export default function Property({address, baths, beds, image_url, name, price, sq_ft, property_type}) {
+export default function PropertyItem({address, baths, beds, image_url, name, price, sq_ft, property_type}) {
   return (
     <div className="col-md-6 col-lg-4 mb-4">
       <div className="property-entry h-100">
@@ -8,14 +8,12 @@ export default function Property({address, baths, beds, image_url, name, price, 
           <div className="offer-type-wrap">
             {property_type.map((item, index) =>  <span className="offer-type bg-danger" key={index}>{item}</span>)}
           </div>
-          {console.log(image_url)}
           <img src={image_url} alt="property" className="img-fluid"/>
         </a>
         <div className="p-4 property-body">
           <a href="#" className="property-favorite"><i className="fa fa-heart-o"></i></a>
           <h2 className="property-title"><a href="property-details.html">{name}</a></h2>
-          <i className="fa fa-map-marker" aria-hidden="true"></i>
-          <span className="property-location d-block mb-3"><span className="property-icon icon-room"></span>{address}</span>
+          <span className="property-location d-block mb-3"><i className="fa fa-map-marker icon-room" aria-hidden="true"></i> {address}</span>
           <strong className="property-price text-primary mb-3 d-block text-success">{price}</strong>
           <ul className="property-specs-wrap mb-3 mb-lg-0">
             <li>

@@ -220,5 +220,57 @@
       "beds": 3,
       "sq_ft": 6500
     }
+  ],
+  "agents": [
+    {
+      "id": 1,
+      "image": "https://res.cloudinary.com/daktari/image/upload/v1583219817/propertyhub/person_1_kjpqsx.jpg",
+      "name": "Megan Smith",
+      "title": "Real Estate Agent",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate, vitae minus obcaecati provident beatae!",
+      "fb": "https://www.fb.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    {
+      "id": 2,
+      "image": "https://res.cloudinary.com/daktari/image/upload/v1583219816/propertyhub/person_2_uwjplj.jpg",
+      "name": "Brooke Cagle",
+      "title": "Real Estate Agent",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "fb": "https://www.fb.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    {
+      "id": 3,
+      "image": "https://res.cloudinary.com/daktari/image/upload/v1583219817/propertyhub/person_4_pq3l9g.jpg",
+      "name": "Sarah Aquirre",
+      "title": "Real Estate Agent",
+      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.",
+      "fb": "https://www.fb.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    {
+      "id": 4,
+      "image": "https://res.cloudinary.com/daktari/image/upload/v1583219817/propertyhub/person_3_tmxjqm.jpg",
+      "name": "Robert Aquirre",
+      "title": "Real Estate Agent",
+      "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis.",
+      "fb": "https://www.fb.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    {
+      "id": 5,
+      "image": "https://res.cloudinary.com/daktari/image/upload/v1583219817/propertyhub/person_5_egj4fi.jpg",
+      "name": "Mandisa Griffin",
+      "title": "Real Estate Agent",
+      "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.",
+      "fb": "https://www.fb.com",
+      "twitter": "https://www.twitter.com",
+      "linkedin": "https://www.linkedin.com"
+    }
   ]
 }  

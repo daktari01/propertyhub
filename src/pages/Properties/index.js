@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import Property from '../Property'
+import PropertyItem from '../PropertyItem';
 import { getPropertiesAction } from './action';
 import Paginator from 'react-hooks-paginator';
 
@@ -25,12 +25,11 @@ function Properties() {
     setCurrentProperties(properties.payload.slice(offset, offset + pageLimit));
   }, [offset, properties]);
 
-  console.log({properties})
   return (
     <div>
        <div className="row mb-5">
          {properties && currentProperties.map(property => (
-           <Property
+           <PropertyItem
             key={property.id}
             address={property.address}
             baths={property.baths}
